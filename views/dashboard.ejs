@@ -6,9 +6,7 @@
 </style>
 
 <div id="mainDiv">
-
     <div id="webCV">
-
         <div id="nav-container">
             <div class="bg"></div>
             <div class="button" tabindex="0">
@@ -29,41 +27,38 @@
                 </ul>
             </div>
         </div>
-
         <!-- ide jön a webwes cv -->
-
         <div class="grid-container">
             <div class="header">
-                <label>
+                <label id="idLabel">
                     <span id="spanVnev1">
                         <%= vnev %>
                     </span> <span id="spanKnev2">
                         <%= knev %>
                     </span>
+                    <span id="idMunkakorok"><%= munkakorok %></span>
                 </label>
             </div>
-
             <div class="left">
                 <img id="leftImage" src="data:image/<%= contentType %>;base64, <%= imagePyramid1 %>">
             </div>
-
             <div class="main">
                 <section id="mainSection">
-
                     <div id="idBemutatkozas" class="section overlay">
                         <h2 class="h2Class">Bemutatkozás</h2>
-                        <div class="divRightWeb">
-                            <p>A nevem <span id="spanVnev1">
-                                    <%= vnev %>
-                                </span> <span id="spanKnev2">
-                                    <%= knev %>
-                                </span></p>
-                            <p>
-                                <%= bemutatkozas %>
-                            </p>
+                        <div class="grid-container-all">
+                            <div class="divRightWeb">
+                                <p>A nevem <span>
+                                        <%= vnev %>
+                                    </span> <span>
+                                        <%= knev %>
+                                    </span></p>
+                                <p>
+                                    <%= bemutatkozas %>
+                                </p>
+                            </div>
                         </div>
                     </div>
-
                     <div id="idAdatok" class="section overlay">
                         <h2 class="h2Class">Szakmai tapasztalatok</h2>
                         <% data.forEach(function(dat) { %>
@@ -91,113 +86,115 @@
                             </div>
                             <% }); %>
                     </div>
-
                     <div id="idKeszsegek" class="section overlay">
-                        <div class="divRightWeb">
-                            <h2 class="h2Class">Technológiák - Eszközök</h2>
-                            <div>
-                                <ul class="ulClass">
-                                    <li class="liClass">
-                                        <%= s1 %>
-                                    </li>
-                                    <li class="liClass">
-                                        <%= s2 %>
-                                    </li>
-                                    <li class="liClass">
-                                        <%= s3 %>
-                                    </li>
-                                    <li class="liClass">
-                                        <%= s4 %>
-                                    </li>
-                                    <li class="liClass">
-                                        <%= s5 %>
-                                    </li>
-                                    <li class="liClass">
-                                        <%= s6 %>
-                                    </li>
-                                    <li class="liClass">
-                                        <%= s7 %>
-                                    </li>
-                                    <li class="liClass">
-                                        <%= s8 %>
-                                    </li>
-                                    <li class="liClass">
-                                        <%= s9 %>
-                                    </li>
-                                    <li class="liClass">
-                                        <%= s10 %>
-                                    </li>
-                                    <li class="liClass">
-                                        <%= s11 %>
-                                    </li>
-                                </ul>
+                        <h2 class="h2Class">Technológiák - Eszközök</h2>
+                        <div class="grid-container-all">
+                            <div class="divRightWeb">
+                                <div>
+                                    <ul class="ulClass">
+                                        <li class="liClass">
+                                            <%= s1 %>
+                                        </li>
+                                        <li class="liClass">
+                                            <%= s2 %>
+                                        </li>
+                                        <li class="liClass">
+                                            <%= s3 %>
+                                        </li>
+                                        <li class="liClass">
+                                            <%= s4 %>
+                                        </li>
+                                        <li class="liClass">
+                                            <%= s5 %>
+                                        </li>
+                                        <li class="liClass">
+                                            <%= s6 %>
+                                        </li>
+                                        <li class="liClass">
+                                            <%= s7 %>
+                                        </li>
+                                        <li class="liClass">
+                                            <%= s8 %>
+                                        </li>
+                                        <li class="liClass">
+                                            <%= s9 %>
+                                        </li>
+                                        <li class="liClass">
+                                            <%= s10 %>
+                                        </li>
+                                        <li class="liClass">
+                                            <%= s11 %>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
-
-
                     <div id="idVegzettsegek" class="section overlay">
                         <h2 class="h2Class">Tanulmányok</h2>
-                        <div class="divRightWeb">
-                            <ul class="ulClass">
-                                <li class="liClass">
-                                    <%= e1 %>
-                                </li>
-                                <li class="liClass">
-                                    <%= e2 %>
-                                </li>
-                                <li class="liClass">
-                                    <%= e3 %>
-                                </li>
-                                <li class="liClass">
-                                    <%= e4 %>
-                                </li>
-                                <li class="liClass">
-                                    <%= e5 %>
-                                </li>
-                                <li class="liClass">
-                                    <%= e6 %>
-                                </li>
-                                <li class="liClass">
-                                    <%= e7 %>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div id="idNyelv" class="section overlay">
-                        <h2 class="h2Class">Nyelvismeret</h2>
-                        <div class="divRightWeb">
-                            <div>
+                        <div class="grid-container-all">
+                            <div class="divRightWeb">
                                 <ul class="ulClass">
                                     <li class="liClass">
-                                        <%= l1 %>
+                                        <%= e1 %>
+                                    </li>
+                                    <li class="liClass">
+                                        <%= e2 %>
+                                    </li>
+                                    <li class="liClass">
+                                        <%= e3 %>
+                                    </li>
+                                    <li class="liClass">
+                                        <%= e4 %>
+                                    </li>
+                                    <li class="liClass">
+                                        <%= e5 %>
+                                    </li>
+                                    <li class="liClass">
+                                        <%= e6 %>
+                                    </li>
+                                    <li class="liClass">
+                                        <%= e7 %>
                                     </li>
                                 </ul>
                             </div>
-                        </div>
+                        </div>                        
                     </div>
-
+                    <div id="idNyelv" class="section overlay">
+                        <h2 class="h2Class">Nyelvismeret</h2>
+                        <div class="grid-container-all">
+                            <div class="divRightWeb">
+                                <div>
+                                    <ul class="ulClass">
+                                        <li class="liClass">
+                                            <%= l1 %>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
                     <div id="idAbout" class="section overlay">
                         <h2 class="h2Class">A portfolió technológiája</h2>
-                        <div class="divRightWeb">
-                            <p>
-                                    <!-- <%= vnev %> --> próba
-                            </p>
-        
+                        <div class="grid-container-all">
+                            <div class="divRightWeb">
+                                <div>
+                                    <p>
+                                            <!-- <%= vnev %> --> próba
+                                    </p>
+                                </div>
+                            </div>
                         </div>
                     </div>
-
                 </section>
             </div>
-
             <div class="footer">
                 <div>
                     <p><i class="far fa-user"></i>
                         <label class="divContact">
-                            <span id="spanVnev1">
+                            <span>
                                 <%= vnev %>
-                            </span> <span id="spanKnev2">
+                            </span> <span>
                                 <%= knev %>
                             </span>
                         </label>
@@ -208,7 +205,6 @@
                                         <%= hazszam %>
                         </label>
                     </p>
-                    <!-- <p class="contact"><i class="far fa-star"></i> -->
                     <p class="contact"><i class="far fa-star"></i>
                         <label class="divContact">
                             <%= szulido %>
@@ -230,14 +226,12 @@
             </div>
         </div>
     </div>
-
     <div id="printCV">
         <div class="flex-container">
-            <!-- ide van a nyomtatott cv -->
+            <!-- ide jön a nyomtatott cv -->
             <div class="center">
                 <div id="idDiv1">
                     <p id="cv1">Curriculum vitae</p>
-
                     <div class="page-header">
                         <div class="page-header-left">
                             <div class="flexDiv1">
@@ -253,16 +247,13 @@
                                 </p>
                             </div>
                         </div>
-
                         <div id="flexDiv4">
                         </div>
-
                         <div class="flexDiv2">
                             <p class="contact"><i class="fas fa-map-marked-alt"></i>
                                 <%= irsz %>, <%= varos %>, <%= utca %>
                                             <%= hazszam %>
                             </p>
-                            <!-- <p class="contact"><%= szulido %></p> -->
                             <p class="contact">
                                 <i class="fas fa-phone-alt"></i>
                                 <%= tel %>
@@ -273,7 +264,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div>
                     <div id="page-content">
 
@@ -298,17 +288,12 @@
                                 </div>
                                 <% }); %>
                         </div>
-
                         <div id="pageFooter"></div>
-
                     </div>
                 </div>
-
                 <p style="page-break-after:always;" />
-
                 <div id="idDiv2">
                     <p id="cv2">Curriculum vitae</p>
-
                     <div class="page-header">
                         <div class="page-header-left">
                             <div class="flexDiv1">
@@ -324,16 +309,13 @@
                                 </p>
                             </div>
                         </div>
-
                         <div class="flexDiv4">
                         </div>
-
                         <div class="flexDiv2">
                             <p class="contact"><i class="fas fa-map-marked-alt"></i>
                                 <%= irsz %>, <%= varos %>, <%= utca %>
                                             <%= hazszam %>
                             </p>
-                            <!-- <p class="contact"><%= szulido %></p> -->
                             <p class="contact">
                                 <i class="fas fa-phone-alt"></i>
                                 <%= tel %>
@@ -344,10 +326,8 @@
                         </div>
                     </div>
                 </div>
-
                 <div>
                     <div id="page-content">
-
                         <div id="divSkills" class="container-fluid">
                             <div class="row">
                                 <div class="col-4 divLeft">
@@ -392,7 +372,6 @@
                                 </div>
                             </div>
                         </div>
-
                         <div id="divEducations" class="container-fluid">
                             <div class="row">
                                 <div class="col-4 divLeft">
@@ -425,7 +404,6 @@
                                 </div>
                             </div>
                         </div>
-
                         <div id="divLanguages" class="container-fluid">
                             <div class="row">
                                 <div class="col-4 divLeft">
@@ -440,11 +418,9 @@
                                 </div>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
 </div>

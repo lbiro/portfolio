@@ -17,5 +17,4 @@ router.get('/dashboard', ensureAuthenticated, (req, res) => {
     main.fillDashboard(req, res, "HospNET Egészségügyi, Informatikai Kft.", "prism");
 });
 
-
 module.exports = router;

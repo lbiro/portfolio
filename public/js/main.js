@@ -98,14 +98,6 @@ function fillDashboard(req, res, p1, p2) {
 
             };
 
-            /*
-            if (tomb){
-                console.log(JSON.stringify(tomb));
-            }
-            */
-
-            
-
             res.render('dashboard', {
                 image: bImage,
                 contentType: sContentType,
@@ -161,8 +153,6 @@ function fillDashboard(req, res, p1, p2) {
         })
 
 };
-
-
 
 module.exports = { fillBackground, fillDashboard };
 
