@@ -1,0 +1,258 @@
+html,
+body {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#printCV {
+    display: none;
+}
+
+.header {
+  grid-area: header;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 1vw;
+  font-size: 4vw;
+  font-family: "DM Sans", sans-serif;
+  font-weight: bolder;
+}
+
+.left {
+  grid-area: left;
+  font-family: "DM Sans", sans-serif;
+}
+
+.main {
+  grid-area: main;
+  box-shadow:inset 0 0 0 100vw rgba(0,0,0, 0.3);
+  font-family: "DM Sans", sans-serif;
+}
+
+.footer {
+  grid-area: footer;
+  color: lightgoldenrodyellow;
+  padding: 0.5vw;
+  margin: 1vw;
+  margin-left: 2vw;
+  margin-top: 2vw;
+  margin-left: 1.5vw;
+  margin-top: 0;
+  text-align: justify;
+  font-size: 0.9vw;
+  font-family: "DM Sans", sans-serif;
+}
+
+#h1Contact {
+  text-align: start;
+  margin-top: 0;
+  text-transform: uppercase;
+  font-size:2vw;
+}
+
+.divContact{
+  margin-left: 1vw;
+  font-size: 1.1vw;
+}
+
+#mainSection {
+  color: lightgoldenrodyellow;
+}
+
+
+#leftImage {
+  display: block;
+  /* width: 100%; */
+  width: 25vw;
+  height: auto;
+  object-fit: fill;
+}
+
+.grid-container {
+  display: grid;
+
+  grid-template-columns: 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5%;
+  grid-template-rows: auto;
+
+  grid-template-areas:
+    'header header header header header header header header'
+    'left left main main main main main main'
+    'footer footer main main main main main main';
+  height: 100vh;
+  overflow: hidden;
+}
+
+#mainSection {
+  /* padding: 10px;
+  margin: 10px; */
+  padding: 1vw;
+  margin: 1vw;
+  margin-left: 2vw;
+  text-align: justify;
+  font-size:1vw;
+}
+
+#idBemutatkozas {
+  object-fit: cover;
+
+  overflow: hidden;
+  width: 100%;
+  height: 80vh;
+
+  margin-right: 2vw;
+
+}
+
+#idAdatok {
+  object-fit: cover;
+
+  overflow: scroll;
+  overflow-x: hidden;
+  width: 100%;
+  height: 80vh;
+
+  padding-right: 1vw;
+
+}
+
+#idKeszsegek {
+  object-fit: cover;
+
+  overflow: hidden;
+  width: 100%;
+  height: 80vh;
+
+  margin-right: 2vw;
+
+}
+
+#idVegzettsegek {
+  object-fit: cover;
+
+  overflow: hidden;
+  width: 100%;
+  height: 80vh;
+
+  margin-right: 2vw;
+
+}
+
+#idNyelv {
+  object-fit: cover;
+
+  overflow: hidden;
+  width: 100%;
+  height: 80vh;
+
+  margin-right: 2vw;
+
+}
+
+#idAdatok::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);
+
+}
+
+#idAdatok::-webkit-scrollbar {
+  width: 0.2vw;
+  transition: width 0.9s;
+}
+
+#idAdatok::-webkit-scrollbar-thumb {
+  border-radius: 1vw;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);
+  background-color: lightsteelblue;
+}
+
+/* #idAdatok:hover::-webkit-scrollbar {
+  overflow-x: scroll;
+} */
+
+/********************************************************************************/
+
+.overlay {
+  display: none;
+  opacity: 0;
+  transition: opacity 1s, height 0 1s;
+  height: 0;
+}
+
+.overlay:target {
+  display: block;
+  opacity: 1;
+  transition: opacity 1s, height 0;
+}
+
+/*********************************************************************************/
+
+.h2Class{
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 2.5vw;
+  margin-top: 1vw;
+  margin-bottom: 3vw;
+}
+
+.ulClass {
+  margin-left: 5vw;
+  font-size: 1.3vw;
+  list-style-type: square;
+}
+
+.liClass {
+  margin-top: 1vw;
+  font-size: 1vw;  
+}
+
+.grid-container-job {
+  display: grid;
+
+  grid-template-columns: 30% 70%;
+  grid-template-rows: auto;
+
+  grid-template-areas:
+    'divLeftWeb divRightWeb';
+  overflow: hidden;
+}
+
+
+.divLeftWeb {
+  grid-area: divLeftWeb;
+  border: 0;
+  padding-right: 0.3vw;
+  padding-left: 0.5vw;
+  margin: 0;
+  padding-top: 1vw;
+  margin-top: 1vw;
+  border-top: 0.2vw;
+  border-style: solid;
+  border-color: rgb(66, 171, 197);
+  font-size: 1.1vw;
+  text-align: justify;
+  text-transform: uppercase;
+  text-align: left;
+  color: black;
+  text-shadow: 0px 0px 4px white;
+  background-color: rgba(255,255,255,0.8);
+}
+
+.divRightWeb {
+  grid-area: divRightWeb;
+  border: 0;
+  padding: 0.5vw;
+  margin: 0;
+  padding-top: 1vw;
+  margin-top: 1vw;
+  margin-left: 0.2vw;
+  border-top: 0.2vw;
+  border-style: solid;
+  border-color: lightgrey;
+  font-size: 1.1vw;
+  text-align: justify;
+  color: black;
+  text-shadow: 0px 0px 4px white;
+  font-weight: 200;
+  background-color: rgba(255,255,255,0.8);
+}

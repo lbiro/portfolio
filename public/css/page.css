@@ -1,0 +1,185 @@
+@page {
+  size: A4 portrait;
+  margin: -0.2cm;
+
+  @bottom-center {
+    content: counter(page) " of " counter(pages);
+  }
+
+  @top-center {
+    content: element(header);
+  }
+}
+
+#page-footer {
+  display: block;
+  position: running(footer);
+}
+
+.page-number:before {
+  content: counter(page);
+}
+
+.page-count:before {
+  content: counter(pages);
+}
+
+@media print {
+  /* .grid-container, grid-container * {
+    display: none !important;
+  } */
+
+  #idLogout,
+  #idLogout * {
+    display: none !important;
+  }
+
+  #leftSide,
+  leftSide * {
+    display: none !important;
+  }
+
+  #rightSide,  rightSide * {
+    display: none !important;
+  }
+
+  /* #nav-container, nav-container * {
+    display: none !important;
+  } */
+
+  #printCV {
+    display: block;
+  }
+
+  #webCV {
+    display: none;
+  }
+
+  #idDiv2 {
+    display: block;
+    margin-top: 10px;
+    padding-top: 100px;
+  }
+
+  html,
+  body {
+    display: flex;
+  }
+
+  .pNev {
+    text-align: left;
+    padding: 0;
+    margin-top: 30px;
+    margin-left: 0px;
+    font-size: 80px;
+    text-transform: uppercase;
+    font-family: "DM Sans", sans-serif;
+  }
+
+  .page-header {
+    display: flex;
+    position: running(header);
+    flex-direction: row;
+    width: 147.6vh;
+  }
+
+  .center {
+    font-size: 30px;
+    margin: 10px;
+    padding: 100px;
+    width: 65%;
+  }
+
+  #cv1,
+  #cv2 {
+    width: 50%;
+    height: auto;
+    border: 0;
+    padding: 0;
+    border-top: 10px;
+    border-style: solid;
+    border-color: rgb(71, 71, 71);
+    text-align: center;
+    margin-left: -100px;
+    margin-top: -40px;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-family: "DM Sans", sans-serif;
+    color: white;
+    background-color: rgb(66, 171, 197);
+    -webkit-print-color-adjust: exact !important;
+  }
+
+  #spanVnev1,
+  #spanVnev2 {
+    font-weight: 1000;
+    color: rgb(66, 171, 197);
+  }
+
+  /******************************************************************/
+  .flexDiv2 {
+    background-color: rgb(66, 171, 197);
+    -webkit-print-color-adjust: exact !important;
+    margin-left: 50px;
+    width: 25%;
+    padding: 30px;
+    /* width: 20rem; */
+  }
+
+  .contact {
+    font-size: 20px;
+    font-style: normal;
+    font-family: "DM Sans", sans-serif;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    padding-top: 15px;
+    color: white;
+  }
+
+  /******************************************************************/
+
+  .flexDiv3 {
+    margin-top: 0px;
+    padding: 0;
+    border: 0;
+    font-size: 28px;
+    text-transform: uppercase;
+    font-family: "DM Sans", sans-serif;
+    color: white;
+  }
+
+  /**********************************************************************/
+
+  .divLeft {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    padding-top: 25px;
+    margin-top: 20px;
+    border-top: 5px;
+    border-style: solid;
+    border-color: rgb(66, 171, 197);
+    font-size: 17px;
+    font-family: "DM Sans", sans-serif;
+    text-transform: uppercase;
+  }
+
+  .divRight {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    padding-top: 25px;
+    margin-top: 20px;
+    border-top: 5px;
+    border-style: solid;
+    border-color: lightgrey;
+    font-size: 17px;
+    font-family: "DM Sans", sans-serif;
+    text-align: justify;
+  }
+
+  .page-header {
+    margin-bottom: 40px;
+  }
+}
