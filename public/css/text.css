@@ -1,0 +1,28 @@
+.classH3 {
+    text-align: center;
+    margin-bottom: 3vw;
+    font-size: 3vw;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
+
+.classH6Bemutatkozas {
+    margin-left: 3vw;
+    margin-right: 3vw;
+    margin-bottom: 1.5vw;
+    font-size: 1.1vw;
+    text-align: justify;
+    font-family: 'Roboto', sans-serif;
+}
+
+#idGit {
+    margin-top: 1vw;
+    font-size: 1vw;
+    font-weight: 900;
+    font-family: 'Roboto', sans-serif;
+}
+
+.spanText{
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}

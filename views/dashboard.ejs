@@ -1,7 +1,7 @@
 <style>
     html,
     body {
-        background-image: url("data:image/<%= contentType %>;base64, <%= image %>");
+        background-image: url("data:image/<%- contentType %>;base64, <%- image %>");
     }
 </style>
 
@@ -32,15 +32,15 @@
             <div class="header">
                 <label id="idLabel">
                     <span id="spanVnev1">
-                        <%= vnev %>
+                        <%- vnev %>
                     </span> <span id="spanKnev2">
-                        <%= knev %>
+                        <%- knev %>
                     </span>
-                    <span id="idMunkakorok"><%= munkakorok %></span>
+                    <span id="idMunkakorok"><%- munkakorok %></span>
                 </label>
             </div>
             <div class="left">
-                <img id="leftImage" src="data:image/<%= contentType %>;base64, <%= imagePyramid1 %>">
+                <img id="leftImage" src="data:image/<%- contentType %>;base64, <%- imagePyramid1 %>">
             </div>
             <div class="main">
                 <section id="mainSection">
@@ -60,22 +60,22 @@
                             <div class="grid-container-job">
                                 <div class="divLeftWeb">
                                     <p>
-                                        <%= dat.munkakor%>
+                                        <%- dat.munkakor%>
                                     </p>
                                     <p>
                                         <b>
-                                            <%= dat.ceg %>
+                                            <%- dat.ceg %>
                                         </b>
                                     </p>
                                     <p>
                                         <i>
-                                            <%= dat.tolig%>
+                                            <%- dat.tolig%>
                                         </i>
                                     </p>
                                 </div>
                                 <div class="divRightWeb">
                                     <p>
-                                        <%= dat.leiras%>
+                                        <%- dat.leiras%>
                                     </p>
                                 </div>
                             </div>
@@ -88,37 +88,37 @@
                                 <div>
                                     <ul class="ulClass">
                                         <li class="liClass">
-                                            <%= s1 %>
+                                            <%- s1 %>
                                         </li>
                                         <li class="liClass">
-                                            <%= s2 %>
+                                            <%- s2 %>
                                         </li>
                                         <li class="liClass">
-                                            <%= s3 %>
+                                            <%- s3 %>
                                         </li>
                                         <li class="liClass">
-                                            <%= s4 %>
+                                            <%- s4 %>
                                         </li>
                                         <li class="liClass">
-                                            <%= s5 %>
+                                            <%- s5 %>
                                         </li>
                                         <li class="liClass">
-                                            <%= s6 %>
+                                            <%- s6 %>
                                         </li>
                                         <li class="liClass">
-                                            <%= s7 %>
+                                            <%- s7 %>
                                         </li>
                                         <li class="liClass">
-                                            <%= s8 %>
+                                            <%- s8 %>
                                         </li>
                                         <li class="liClass">
-                                            <%= s9 %>
+                                            <%- s9 %>
                                         </li>
                                         <li class="liClass">
-                                            <%= s10 %>
+                                            <%- s10 %>
                                         </li>
                                         <li class="liClass">
-                                            <%= s11 %>
+                                            <%- s11 %>
                                         </li>
                                     </ul>
                                 </div>
@@ -131,25 +131,25 @@
                             <div class="divRightWeb">
                                 <ul class="ulClass">
                                     <li class="liClass">
-                                        <%= e1 %>
+                                        <%- e1 %>
                                     </li>
                                     <li class="liClass">
-                                        <%= e2 %>
+                                        <%- e2 %>
                                     </li>
                                     <li class="liClass">
-                                        <%= e3 %>
+                                        <%- e3 %>
                                     </li>
                                     <li class="liClass">
-                                        <%= e4 %>
+                                        <%- e4 %>
                                     </li>
                                     <li class="liClass">
-                                        <%= e5 %>
+                                        <%- e5 %>
                                     </li>
                                     <li class="liClass">
-                                        <%= e6 %>
+                                        <%- e6 %>
                                     </li>
                                     <li class="liClass">
-                                        <%= e7 %>
+                                        <%- e7 %>
                                     </li>
                                 </ul>
                             </div>
@@ -162,7 +162,7 @@
                                 <div>
                                     <ul class="ulClass">
                                         <li class="liClass">
-                                            <%= l1 %>
+                                            <%- l1 %>
                                         </li>
                                     </ul>
                                 </div>
@@ -175,7 +175,7 @@
                             <div class="divRightWeb">
                                 <div>
                                     <p>
-                                            <!-- <%= vnev %> --> próba
+                                            <!-- <%- vnev %> --> próba
                                     </p>
                                 </div>
                             </div>
@@ -188,32 +188,32 @@
                     <p><i class="far fa-user"></i>
                         <label class="divContact">
                             <span>
-                                <%= vnev %>
+                                <%- vnev %>
                             </span> <span>
-                                <%= knev %>
+                                <%- knev %>
                             </span>
                         </label>
                     </p>
                     <p><i class="fas fa-map-marked-alt"></i>
                         <label class="divContact">
-                            <%= irsz %>, <%= varos %>, <%= utca %>
-                                        <%= hazszam %>
+                            <%- irsz %>, <%- varos %>, <%- utca %>
+                                        <%- hazszam %>
                         </label>
                     </p>
                     <p class="contact"><i class="far fa-star"></i>
                         <label class="divContact">
-                            <%= szulido %>
+                            <%- szulido %>
                         </label>
                     </p>
                     <p> <i class="fas fa-phone-alt"></i>
                         <label class="divContact">
-                            <%= tel %>
+                            <%- tel %>
                         </label>
                     </p>
                     <p><i class="fas fa-at"></i>
                         <label class="divContact">
-                            <a href="mailto:<%= email %>">
-                                <%= email %>
+                            <a href="mailto:<%- email %>">
+                                <%- email %>
                             </a>
                         </label>
                     </p>
@@ -231,14 +231,14 @@
                         <div class="page-header-left">
                             <div class="flexDiv1">
                                 <p class="pNev"><span id="spanVnev1">
-                                        <%= vnev %>
+                                        <%- vnev %>
                                     </span> <span id="spanKnev2">
-                                        <%= knev %>
+                                        <%- knev %>
                                     </span></p>
                             </div>
                             <div class="flexDiv3">
                                 <p class="munkakorok">
-                                    <%= munkakorok %>
+                                    <%- munkakorok %>
                                 </p>
                             </div>
                         </div>
@@ -246,15 +246,15 @@
                         </div>
                         <div class="flexDiv2">
                             <p class="contact"><i class="fas fa-map-marked-alt"></i>
-                                <%= irsz %>, <%= varos %>, <%= utca %>
-                                            <%= hazszam %>
+                                <%- irsz %>, <%- varos %>, <%- utca %>
+                                            <%- hazszam %>
                             </p>
                             <p class="contact">
                                 <i class="fas fa-phone-alt"></i>
-                                <%= tel %>
+                                <%- tel %>
                             </p>
                             <p class="contact"><i class="fas fa-at"></i>
-                                <%= email %>
+                                <%- email %>
                             </p>
                         </div>
                     </div>
@@ -267,17 +267,20 @@
                                 <div class="row">
                                     <div class="col-4 divLeft">
                                         <p>
-                                            <%= dat.munkakor%>
+                                            <%- dat.munkakor%>
                                         </p>
-                                        <p><b>
-                                                <%= dat.ceg %>
-                                            </b> <b><i>
-                                                    <%= dat.tolig%>
-                                                </i></b></p>
+                                        <p>
+                                            <b>
+                                                <%- dat.ceg %>
+                                            </b>
+                                        </p>
+                                        <p>
+                                            <%- dat.tolig%>
+                                        </p>
                                     </div>
                                     <div class="col-8 divRight">
                                         <p>
-                                            <%= dat.leiras%>
+                                            <%- dat.leiras%>
                                         </p>
                                     </div>
                                 </div>
@@ -293,14 +296,14 @@
                         <div class="page-header-left">
                             <div class="flexDiv1">
                                 <p class="pNev"><span id="spanVnev2">
-                                        <%= vnev %>
+                                        <%- vnev %>
                                     </span> <span id="spanKnev2">
-                                        <%= knev %>
+                                        <%- knev %>
                                     </span></p>
                             </div>
                             <div class="flexDiv3">
                                 <p class="munkakorok">
-                                    <%= munkakorok %>
+                                    <%- munkakorok %>
                                 </p>
                             </div>
                         </div>
@@ -308,15 +311,15 @@
                         </div>
                         <div class="flexDiv2">
                             <p class="contact"><i class="fas fa-map-marked-alt"></i>
-                                <%= irsz %>, <%= varos %>, <%= utca %>
-                                            <%= hazszam %>
+                                <%- irsz %>, <%- varos %>, <%- utca %>
+                                            <%- hazszam %>
                             </p>
                             <p class="contact">
                                 <i class="fas fa-phone-alt"></i>
-                                <%= tel %>
+                                <%- tel %>
                             </p>
                             <p class="contact"><i class="fas fa-at"></i>
-                                <%= email %>
+                                <%- email %>
                             </p>
                         </div>
                     </div>
@@ -331,37 +334,37 @@
                                 <div class="col-8 divRight">
                                     <ul>
                                         <li>
-                                            <%= s1 %>
+                                            <%- s1 %>
                                         </li>
                                         <li>
-                                            <%= s2 %>
+                                            <%- s2 %>
                                         </li>
                                         <li>
-                                            <%= s3 %>
+                                            <%- s3 %>
                                         </li>
                                         <li>
-                                            <%= s4 %>
+                                            <%- s4 %>
                                         </li>
                                         <li>
-                                            <%= s5 %>
+                                            <%- s5 %>
                                         </li>
                                         <li>
-                                            <%= s6 %>
+                                            <%- s6 %>
                                         </li>
                                         <li>
-                                            <%= s7 %>
+                                            <%- s7 %>
                                         </li>
                                         <li>
-                                            <%= s8 %>
+                                            <%- s8 %>
                                         </li>
                                         <li>
-                                            <%= s9 %>
+                                            <%- s9 %>
                                         </li>
                                         <li>
-                                            <%= s10 %>
+                                            <%- s10 %>
                                         </li>
                                         <li>
-                                            <%= s11 %>
+                                            <%- s11 %>
                                         </li>
                                     </ul>
                                 </div>
@@ -375,25 +378,25 @@
                                 <div class="col-8 divRight">
                                     <ul>
                                         <li>
-                                            <%= e1 %>
+                                            <%- e1 %>
                                         </li>
                                         <li>
-                                            <%= e2 %>
+                                            <%- e2 %>
                                         </li>
                                         <li>
-                                            <%= e3 %>
+                                            <%- e3 %>
                                         </li>
                                         <li>
-                                            <%= e4 %>
+                                            <%- e4 %>
                                         </li>
                                         <li>
-                                            <%= e5 %>
+                                            <%- e5 %>
                                         </li>
                                         <li>
-                                            <%= e6 %>
+                                            <%- e6 %>
                                         </li>
                                         <li>
-                                            <%= e7 %>
+                                            <%- e7 %>
                                         </li>
                                     </ul>
                                 </div>
@@ -407,7 +410,7 @@
                                 <div class="col-8 divRight">
                                     <ul>
                                         <li>
-                                            <%= l1 %>
+                                            <%- l1 %>
                                         </li>
                                     </ul>
                                 </div>
