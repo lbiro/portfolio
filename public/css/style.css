@@ -224,6 +224,21 @@ body {
   background-color: lightsteelblue;
 }
 
+#idAbout::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);
+}
+
+#idAbout::-webkit-scrollbar {
+  width: 0.2vw;
+  transition: width 0.9s;
+}
+
+#idAbout::-webkit-scrollbar-thumb {
+  border-radius: 1vw;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);
+  background-color: lightsteelblue;
+}
+
 #idBemutatkozas {
   object-fit: cover;
   overflow: scroll;
@@ -261,10 +276,12 @@ body {
 
 #idAbout {
   object-fit: cover;
-  overflow: hidden;
+  overflow: scroll;
+  overflow-x: hidden;
   width: 100%;
   height: 75vh;
   margin-right: 2vw;
+  padding-right: 1vw;
 }
 
 /********************************************************************************/

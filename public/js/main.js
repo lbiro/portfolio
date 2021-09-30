@@ -25,7 +25,9 @@ function fillDashboard(req, res, p1, p2) {
                 sVnev, sKnev, sSzulido, sTel, sEmail, sMunkakorok, sIrsz, sVaros, sUtca, sHazszam, sBemutatkozas,
                 sS1,sS2,sS3,sS4,sS5,sS6,sS7,sS8,sS9,sS10,sS11,
                 sE1,sE2,sE3,sE4,sE5,sE6,sE7,
-                sL1;
+                sL1,
+                sWebPageAbout;
+
             let tomb = [];
 
             for (let i = 0; i<result.length;i++) {
@@ -54,9 +56,8 @@ function fillDashboard(req, res, p1, p2) {
                     sContentTypePyramid3 = result[i].img.contentType;
                 };                
 
-                if (result[i].name === 'ball1'){
-                    bImageBall1 = result[i].img.data.toString('base64');
-                    sContentTypeBall1 = result[i].img.contentType;
+                if (result[i].webPageAbout){
+                    sWebPageAbout = result[i].webPageAbout;
                 };
 
                 if (result[i].userData){
@@ -147,7 +148,8 @@ function fillDashboard(req, res, p1, p2) {
                 e5: sE5,
                 e6: sE6,
                 e7: sE7,
-                l1: sL1
+                l1: sL1,
+                webPageAbout: sWebPageAbout
             })
 
         })

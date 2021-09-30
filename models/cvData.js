@@ -149,6 +149,10 @@ const cvDataSchema = new mongoose.Schema({
     l1: {
         type: String,
         required: false
+    },                        
+    webPageAbout: {
+        type: String,
+        required: false
     }    
 });
 
