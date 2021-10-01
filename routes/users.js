@@ -15,9 +15,9 @@ router.get('/login', (req, res) => {
 });
 
 // Register Page
-// router.get('/register', (req, res) => {
-//     main.fillBackground(req, res, "blue circle", "register");
-// });
+ router.get('/register', (req, res) => {
+     main.fillBackground(req, res, "blue circle", "register");
+ });
 
 // Register Handle
 router.post('/register', (req, res) => {

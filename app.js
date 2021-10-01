@@ -18,7 +18,9 @@ app.use('/pdf', express.static(__dirname + '/pathToPDF'));
 require('./config/passport')(passport);
 
 // DB Config
-const db = require('./config/keys').MongoURI;
+require('dotenv').config();
+
+const db = process.env.MongoURI;
 
 // Connect to Mongo
 mongoose.connect(db, { useNewUrlParser: true })
