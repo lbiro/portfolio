@@ -5,15 +5,14 @@ body {
 
 .container {
     height: auto;
-    /* width: 30%; */
     width: 30vw;
     margin: 0;
     border: 0;
     padding: 0;
     border-color: lightgoldenrodyellow;
-    border-radius: 10px;
-    box-shadow: 0px 0px 9px lightgoldenrodyellow;
-    transform: translateX(-50%) translateY(-50%); top: 25%; left: 50%;
+    border-radius: 0.5vw;
+    box-shadow: 0 0 0.7vw lightgoldenrodyellow;
+    transform: translateX(-50%) translateY(-50%); top: 28vh; left: 50vw;
     font-family: 'Rubik', sans-serif;
 }
 
@@ -27,9 +26,10 @@ body {
 
 .btnStyle {
     border: 0;
-    box-shadow: 0px 0px 9px lightgoldenrodyellow;
+    box-shadow: 0 0 0.7vw lightgoldenrodyellow;
     background-color: black;
     color: lightsteelblue;
+    font-size: 1vw;
 }
 
 .btnStyle:hover {
@@ -41,6 +41,7 @@ body {
 .pStyle {
     border: 0;
     color: lightsteelblue;
+    font-size: 1.5vw;
 }
 
 .aStyle {
@@ -54,18 +55,27 @@ body {
 
 .inputStyle {
     border: 0;
-    border: 1px;
+    border: 0.2vw;
     border-style: solid;
     background-color: black;
     opacity: 0.5;
     color: lightsteelblue;
+    font-size: 1.1vw;
 }
 
 .inputStyle:hover {
-    box-shadow: 0px 0px 9px lightgoldenrodyellow;
+    box-shadow: 0 0 0.7vw lightgoldenrodyellow;
     opacity: 1;
     color: black;
   }
+
+.h1Style {
+    font-size: 2vw;
+}
+
+.labelStyle {
+    font-size: 1.1vw;
+}
 
 /*****************************************************************/
 
