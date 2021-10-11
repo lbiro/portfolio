@@ -46,7 +46,7 @@ body {
 
 .aStyle {
     border: 0;
-    color: black;
+    color: rgb(33, 36, 36);
 }
 
 .aStyle:hover {
@@ -79,3 +79,42 @@ body {
 
 /*****************************************************************/
 
+@media only screen and (max-width: 550px) {
+    .container {
+        height: auto;
+        width: calc(100vw/1.2);
+        margin: 0;
+        border: 0;
+        padding: 0;
+        border-color: lightgoldenrodyellow;
+        border-radius: calc(0.5vw * 3);
+        box-shadow: 0 0 calc(0.7vw * 3) lightgoldenrodyellow;
+        transform: translateX(-50%) translateY(-50%); top: 28vh; left: 50vw;
+        font-family: 'Rubik', sans-serif;
+    }   
+
+    .btnStyle {
+        box-shadow: 0 0 calc(0.7vw * 3) lightgoldenrodyellow;
+        font-size: calc(1vw * 3);
+    }
+    
+    .pStyle {
+        font-size: calc(1.5vw * 3);
+    }
+    
+    .inputStyle {
+        border: 0;
+        border: calc(0.2vw * 3);
+        border-style: solid;
+        font-size: calc(1.1vw * 3);
+    }
+    
+    .h1Style {
+        font-size: calc(2vw * 3);
+    }
+    
+    .labelStyle {
+        font-size: calc(1.1vw * 3);
+    }
+
+}
