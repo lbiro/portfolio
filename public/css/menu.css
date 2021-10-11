@@ -179,4 +179,61 @@
     padding: 0;
     list-style: none;
   }
-    
+
+/*****************************************************************/
+
+@media only screen and (max-width: 550px) {
+
+  #nav-container {
+    width: calc(100vw/1.2);
+  }
+  
+  #nav-container .bg {
+    width: 100vw;
+    height: 100%;
+  }
+  
+  .button {
+      height: calc(4vw * 3);
+      width: calc(2vw * 3);
+      margin-left: calc(1.7vw * 3);
+  }
+  
+  .icon-bar + .icon-bar {
+    margin-top: 1vw;
+  }
+  
+  #nav-container:focus-within .button {
+     transform: translateX(calc(16.5vw * 3));
+  }
+
+   #nav-container:focus-within .icon-bar:nth-of-type(1) {
+    transform: translate3d(0, 1.4vw, 0) rotate(45deg);
+  }
+
+  
+  #nav-container:focus-within .icon-bar:nth-of-type(3) {
+    transform: translate3d(0, -1.4vw, 0) rotate(-45deg);
+  }
+
+ 
+  #nav-content {
+    padding: calc(2vw * 3);
+    width: 90%;
+    max-width: calc(17.5vw * 3);
+  }
+ 
+  .small a {
+    font-size: calc(1vw *3);
+  }
+
+  .small a + a {
+    margin-left: calc(1.1vw * 3);
+  }
+
+  .liClassMenu {
+    font-size: calc(0.9vw * 3);
+  }
+
+
+}
