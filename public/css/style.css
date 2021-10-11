@@ -300,3 +300,71 @@ body {
 }
 
 /*********************************************************************************/
+
+
+@media only screen and (max-width: 550px) {
+  
+  .grid-container {
+    grid-template-areas:
+    'header header header header header footer footer footer'
+    'main main main main main main main main'
+    'main main main main main main main main';
+    height: 100vh;
+  }
+  
+  .footer {
+    font-size: 3vw;
+  }
+
+  .divContact{
+    margin-top: 1vh;
+    font-size: calc(1.1vw *1.5);
+  }
+
+
+  #leftImage {
+    width: 0;
+    height: 0;
+  }
+
+  .header {
+    font-size: calc(3vw * 2.5);
+    box-shadow:inset 0 0 0 calc(100vw *2) rgba(0,0,0, 0.3);
+  }
+
+  #idLabel {
+    margin-left: 1vw;
+    margin-top: 7vh;
+    border: 0;
+    border-bottom: 0;
+  }
+
+  #idMunkakorok{
+    font-size: calc(1vw * 2.5);
+  }
+
+  #mainSection {
+    font-size: calc(1vw *3);
+  }
+
+  .h2Class{
+    font-size: calc(2vw *3);
+  }
+
+  .divLeftWeb {
+    font-size: calc(1.1vw *2);
+  }
+  
+  .divRightWeb {
+    font-size: calc(1.1vw *2.2);
+  }
+
+  .ulClass {
+    font-size: calc(1.3vw *2);
+  }
+  
+  .liClass {
+    font-size: calc(1vw *3);  
+  }
+
+}

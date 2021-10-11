@@ -26,3 +26,31 @@
     font-weight: bold;
     font-family: 'Roboto', sans-serif;
 }
+
+.classH4 {
+    font-weight: bold;
+}
+
+
+/*********************************************************************************/
+
+
+@media only screen and (max-width: 550px) {
+    .classH3 {
+        font-size: calc(3vw *2);
+    }
+    
+    .classH6Bemutatkozas {
+        font-size: calc(1.1vw *3);
+    }
+    
+    #idGit {
+        font-size: calc(1vw *3);
+    }
+
+    .classH4 {
+        font-size: calc(2vw *2);
+        font-weight: bold;
+    }
+
+}    
