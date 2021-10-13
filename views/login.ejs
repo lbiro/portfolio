@@ -9,7 +9,9 @@
     <div class="col-md-12 m-auto">
         <div class="card-body">
             <h1 class="text-center mb-3 h1Style"><i class="fas fa-sign-in-alt"></i> Login</h1>
-            <%- include('./partials/messages') %>
+                <div id="divMessages">
+                    <%- include('./partials/messages') %>
+                </div>
                 <form action="/users/login" method="POST">
                     <div class="form-group">
                         <label for="email" class="labelStyle">Email</label>

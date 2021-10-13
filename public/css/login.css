@@ -67,6 +67,7 @@ body {
     box-shadow: 0 0 0.7vw lightgoldenrodyellow;
     opacity: 1;
     color: black;
+    background-color: lightsteelblue;
   }
 
 .h1Style {
@@ -87,14 +88,14 @@ body {
         border: 0;
         padding: 0;
         border-color: lightgoldenrodyellow;
-        border-radius: calc(0.5vw * 3);
-        box-shadow: 0 0 calc(0.7vw * 3) lightgoldenrodyellow;
+        border-radius: calc(0.5vw * 1.5);
+        box-shadow: 0 0 calc(0.7vw * 1.5) lightgoldenrodyellow;
         transform: translateX(-50%) translateY(-50%); top: 28vh; left: 50vw;
         font-family: 'Rubik', sans-serif;
     }   
 
     .btnStyle {
-        box-shadow: 0 0 calc(0.7vw * 3) lightgoldenrodyellow;
+        box-shadow: 0 0 calc(0.7vw * 1.5) lightgoldenrodyellow;
         font-size: calc(1vw * 3);
     }
     
@@ -108,7 +109,7 @@ body {
         border-style: solid;
         font-size: calc(1.1vw * 3);
     }
-    
+
     .h1Style {
         font-size: calc(2vw * 3);
     }

@@ -53,4 +53,8 @@
         font-weight: bold;
     }
 
+    #divMessages {
+        font-size: calc(3.5vw);
+    }
+
 }    

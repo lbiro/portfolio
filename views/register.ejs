@@ -13,7 +13,9 @@
             <h1 class="text-center mb-3 h1Style">
                 <i class="fas fa-user-plus"></i> Register
             </h1>
-            <%- include('./partials/messages') %>
+            <div id="divMessages">
+                <%- include('./partials/messages') %>
+            </div>
             <form action="/users/register" method="POST">
                 <div class="form-group">
                     <label for="name" class="labelStyle">Name</label>
