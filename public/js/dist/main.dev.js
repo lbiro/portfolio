@@ -23,7 +23,7 @@ function fillDashboard(req, res, p1, p2) {
     _id: -1
   };
   cvData.find(query).sort(mysort).then(function (result) {
-    var bImage, bImageKeyboard, bImagePyramid1, bImagePyramid2, bImagePyramid3, bImageBall1, sContentType, sContentTypeKeyboard, sContentTypePyramid1, sContentTypePyramid2, sContentTypePyramid3, sContentTypeBall1, sVnev, sKnev, sSzulido, sTel, sEmail, sMunkakorok, sIrsz, sVaros, sUtca, sHazszam, sBemutatkozas, sS1, sS2, sS3, sS4, sS5, sS6, sS7, sS8, sS9, sS10, sS11, sE1, sE2, sE3, sE4, sE5, sE6, sE7, sL1, sWebPageAbout;
+    var bImage, bImageKeyboard, bImagePyramid1, bImagePyramid2, bImagePyramid3, bImageBall1, sContentType, sContentTypeKeyboard, sContentTypePyramid1, sContentTypePyramid2, sContentTypePyramid3, sContentTypeBall1, sVnev, sKnev, sSzulido, sTel, sEmail, sMunkakorok, sIrsz, sVaros, sUtca, sHazszam, sBemutatkozas, sS1, sS2, sS3, sS4, sS5, sS6, sS7, sS8, sS9, sS10, sS11, sS12, sS13, sS14, sS15, sE1, sE2, sE3, sE4, sE5, sE6, sE7, sL1, sWebPageAbout;
     var tomb = [];
     var tomb1 = [];
     var n_db = 0;
@@ -93,6 +93,10 @@ function fillDashboard(req, res, p1, p2) {
         sS9 = result[i].s9;
         sS10 = result[i].s10;
         sS11 = result[i].s11;
+        sS12 = result[i].s12;
+        sS13 = result[i].s13;
+        sS14 = result[i].s14;
+        sS15 = result[i].s15;
         sE1 = result[i].e1;
         sE2 = result[i].e2;
         sE3 = result[i].e3;
@@ -172,6 +176,10 @@ function fillDashboard(req, res, p1, p2) {
       s9: sS9,
       s10: sS10,
       s11: sS11,
+      s12: sS12,
+      s13: sS13,
+      s14: sS14,
+      s15: sS15,
       e1: sE1,
       e2: sE2,
       e3: sE3,

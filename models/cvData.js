@@ -118,6 +118,22 @@ const cvDataSchema = new mongoose.Schema({
         type: String,
         required: false
     },                                        
+    s12: {
+        type: String,
+        required: false
+    },                                        
+    s13: {
+        type: String,
+        required: false
+    },                                        
+    s14: {
+        type: String,
+        required: false
+    },                                        
+    s15: {
+        type: String,
+        required: false
+    },                                        
     e1: {
         type: String,
         required: false
