@@ -79,7 +79,32 @@
                                     </p>
                                 </div>
                             </div>
-                            <% }); %>
+                        <% }); %>
+
+                        <% data1.forEach(function(dat) { %>
+                            <div class="grid-container-job">
+                                <div class="divLeftWeb">
+                                    <p>
+                                        <%- dat.munkakor%>
+                                    </p>
+                                    <p>
+                                        <b>
+                                            <%- dat.ceg %>
+                                        </b>
+                                    </p>
+                                    <p>
+                                        <i>
+                                            <%- dat.tolig%>
+                                        </i>
+                                    </p>
+                                </div>
+                                <div class="divRightWeb">
+                                    <p>
+                                        <%- dat.leiras%>
+                                    </p>
+                                </div>
+                            </div>
+                        <% }); %>
                     </div>
                     <div id="idKeszsegek" class="section overlay">
                         <h2 class="h2Class">Technológiák - Eszközök</h2>
@@ -284,12 +309,80 @@
                                         </p>
                                     </div>
                                 </div>
-                                <% }); %>
+                            <% }); %>
                         </div>
                         <div id="pageFooter"></div>
                     </div>
                 </div>
-                <p style="page-break-after:always;" />
+
+                <p style="page-break-after:always;" />                
+                <div id="idDiv1">
+                    <p id="cv1">Curriculum vitae</p>
+                    <div class="page-header">
+                        <div class="page-header-left">
+                            <div class="flexDiv1">
+                                <p class="pNev"><span id="spanVnev1">
+                                        <%- vnev %>
+                                    </span> <span id="spanKnev2">
+                                        <%- knev %>
+                                    </span></p>
+                            </div>
+                            <div class="flexDiv3">
+                                <p class="munkakorok">
+                                    <%- munkakorok %>
+                                </p>
+                            </div>
+                        </div>
+                        <div id="flexDiv4">
+                        </div>
+                        <div class="flexDiv2">
+                            <p class="contact"><i class="fas fa-map-marked-alt"></i>
+                                <%- irsz %>, <%- varos %>, <%- utca %>
+                                            <%- hazszam %>
+                            </p>
+                            <p class="contact">
+                                <i class="fas fa-phone-alt"></i>
+                                <%- tel %>
+                            </p>
+                            <p class="contact"><i class="fas fa-at"></i>
+                                <%- email %>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div id="page-content">
+
+                        <div class="container-fluid">
+                            <!-- második oldal -->
+                            <% data1.forEach(function(dat) { %>
+                                <div class="row">
+                                    <div class="col-4 divLeft">
+                                        <p>
+                                            <%- dat.munkakor%>
+                                        </p>
+                                        <p>
+                                            <b>
+                                                <%- dat.ceg %>
+                                            </b>
+                                        </p>
+                                        <p>
+                                            <%- dat.tolig%>
+                                        </p>
+                                    </div>
+                                    <div class="col-8 divRight">
+                                        <p>
+                                            <%- dat.leiras%>
+                                        </p>
+                                    </div>
+                                </div>
+                            <% }); %>
+                        </div>
+                        <div id="pageFooter"></div>
+                    </div>
+                </div>
+
+                <!-- <p style="page-break-after:always;" />
                 <div id="idDiv2">
                     <p id="cv2">Curriculum vitae</p>
                     <div class="page-header">
@@ -323,7 +416,7 @@
                             </p>
                         </div>
                     </div>
-                </div>
+                </div> -->
                 <div>
                     <div id="page-content">
                         <div id="divSkills" class="container-fluid">

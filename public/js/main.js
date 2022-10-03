@@ -29,7 +29,9 @@ function fillDashboard(req, res, p1, p2) {
                 sWebPageAbout;
 
             let tomb = [];
-
+            let tomb1 = [];
+            let n_db = 0;
+            
             for (let i = 0; i<result.length;i++) {
                 if (result[i].name === p2){
                     bImage = result[i].img.data.toString('base64');
@@ -94,7 +96,18 @@ function fillDashboard(req, res, p1, p2) {
                 };
 
                 if (result[i].ceg){
-                    tomb.push({"ceg": result[i].ceg, "munkakor": result[i].munkakor, "tolig": result[i].tolig, "leiras": result[i].leiras });
+                    n_db = n_db+1;
+                    
+                    if (n_db <= 7)
+                    {
+                        tomb.push({"ceg": result[i].ceg, "munkakor": result[i].munkakor, "tolig": result[i].tolig, "leiras": result[i].leiras });
+                    };
+
+                    if (n_db > 7)
+                    {
+                        tomb1.push({"ceg": result[i].ceg, "munkakor": result[i].munkakor, "tolig": result[i].tolig, "leiras": result[i].leiras });
+                    };
+                    
                 };
 
             };
@@ -130,6 +143,7 @@ function fillDashboard(req, res, p1, p2) {
                 hazszam: sHazszam,
                 bemutatkozas: sBemutatkozas,
                 data: tomb,
+                data1: tomb1,
                 s1: sS1,
                 s2: sS2,
                 s3: sS3,
