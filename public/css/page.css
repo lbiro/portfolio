@@ -55,7 +55,7 @@
     display: none;
   }
 
-  #idDiv2 {
+  #idDiv2, #idDiv3 {
     display: block;
     /* margin-top: 10px;
     padding-top: 100px; */
@@ -101,7 +101,8 @@
   }
 
   #cv1,
-  #cv2 {
+  #cv2,
+  #cv3 {
     width: 50%;
     height: auto;
     border: 0;

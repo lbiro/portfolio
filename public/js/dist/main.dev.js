@@ -112,7 +112,7 @@ function fillDashboard(req, res, p1, p2) {
       if (result[i].ceg) {
         n_db = n_db + 1;
 
-        if (n_db <= 7) {
+        if (n_db <= 6) {
           tomb.push({
             "ceg": result[i].ceg,
             "munkakor": result[i].munkakor,
@@ -123,7 +123,7 @@ function fillDashboard(req, res, p1, p2) {
 
         ;
 
-        if (n_db > 7) {
+        if (n_db > 6) {
           tomb1.push({
             "ceg": result[i].ceg,
             "munkakor": result[i].munkakor,
